@@ -67,7 +67,7 @@ int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano)
       {
         if (arreglo[i] % 2 == 0) 
         {
-          arregloPar[index] = arr[i];
+          arregloPar[iPos] = arr[i];
           iPos++;
         }
       }
