@@ -66,3 +66,30 @@ exercises.c:78:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 5c537ed
+Thu 17 Aug 2023 08:28:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:77:10: error: ‘result’ undeclared (first use in this function)
+   77 |   return result;
+      |          ^~~~~~
+exercises.c:77:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:89:7: error: array size missing in ‘arr3’
+   89 |   int arr3[];
+      |       ^~~~
+exercises.c:91:1: error: expected ‘(’ before ‘}’ token
+   91 | }
+      | ^
+      | (
+exercises.c:89:7: error: unused variable ‘arr3’ [-Werror=unused-variable]
+   89 |   int arr3[];
+      |       ^~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:78:1: error: control reaches end of non-void function [-Werror=return-type]
+   78 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8482297
