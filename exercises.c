@@ -45,7 +45,7 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano) 
 {
-  int *arregloPar = ;
+  int *arregloPar = NULL;
   *newTamano = 0;
   for (int i = 0; i < tamano; i++) 
   {
