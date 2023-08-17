@@ -111,3 +111,9 @@ exercises.c:89:7: error: unused variable ‘arr3’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 741e573
+Thu 17 Aug 2023 08:29:49 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+8814a98
