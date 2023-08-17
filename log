@@ -251,3 +251,24 @@ exercises.c:78:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 6969f4d
+Thu 17 Aug 2023 08:52:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:9: error: array size missing in ‘arregloPar’
+   48 |   int * arregloPar[];
+      |         ^~~~~~~~~~
+exercises.c:60:16: error: assignment to expression with array type
+   60 |     arregloPar = (int *)malloc(*newTamano * sizeof(int));
+      |                ^
+exercises.c:70:28: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   70 |           arregloPar[iPos] = arreglo[i];
+      |                            ^
+exercises.c:77:10: error: returning ‘int **’ from a function with incompatible return type ‘int *’ [-Werror=incompatible-pointer-types]
+   77 |   return arregloPar;
+      |          ^~~~~~~~~~
+exercises.c:77:10: error: function returns address of local variable [-Werror=return-local-addr]
+cc1: all warnings being treated as errors
+Compilation failed
+dc8529d
