@@ -183,3 +183,30 @@ Thu 17 Aug 2023 08:45:36 PM UTC:
  tests:  0|5
 total_score: 20/70
 1439ddb
+Thu 17 Aug 2023 08:51:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:44: error: passing argument 1 of ‘realloc’ makes pointer from integer without a cast [-Werror=int-conversion]
+   60 |     arregloPar = (int *)realloc(*newTamano * sizeof(int));
+      |                                 ~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                            |
+      |                                            long unsigned int
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:29: note: expected ‘void *’ but argument is of type ‘long unsigned int’
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |                       ~~~~~~^~~~~
+In file included from test.c:1:
+exercises.c:60:25: error: too few arguments to function ‘realloc’
+   60 |     arregloPar = (int *)realloc(*newTamano * sizeof(int));
+      |                         ^~~~~~~
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:14: note: declared here
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fba8b92

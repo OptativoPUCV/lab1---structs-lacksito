@@ -57,7 +57,7 @@ int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano)
 
   if (*newTamano > 0) 
   {
-    arregloPar = (int *)malloc(*newTamano * sizeof(int));
+    arregloPar = (int *)realloc(*newTamano * sizeof(int));
 
     if (arregloPar != NULL) 
     {
