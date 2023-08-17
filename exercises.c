@@ -9,14 +9,33 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int vector[], int tamano) 
+{
+  int max = vector[0];
+  for (int i = 1; i < tamano; i++) 
+  {
+    if (vector[i] > max) 
+    {
+      max = vector[i];
+    }
+  }
+  return max;
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int vector[], int tamano) 
+{
+  for (int i = 0; i < tamano / 2; i++) 
+  {
+    int aux = vector[i];
+    vector[i] = vector[tamano - i - 1];
+    vector[tamano - i - 1] = aux;
+  }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -24,7 +43,39 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano) 
+{
+  int *arregloPar = NULL;
+  *newTamano = 0;
+  for (int i = 0; i < tamano; i++) 
+  {
+    if (arreglo[i] % 2 == 0) 
+    {
+      (*newTamano)++;
+    }
+  }
+
+  if (*newTamano > 0) 
+  {
+    arregloPar = (int *)malloc(*newTamano * sizeof(int));
+
+    if (arregloPar != NULL) 
+    {
+      int iPos = 0;
+
+      for (int i = 0; i < tamano; i++) 
+      {
+        if (arreglo[i] % 2 == 0) 
+        {
+          arregloPar[index] = arr[i];
+          iPos++;
+        }
+      }
+    }
+  }
+
+  return result;
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -33,7 +84,11 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) 
+{
+  int arr3[];
+  for
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
