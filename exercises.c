@@ -74,7 +74,7 @@ int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano)
     }
   }
 
-  return arregloPar;
+  return arreglo;
 }
 
 /*
