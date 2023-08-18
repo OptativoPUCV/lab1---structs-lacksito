@@ -441,3 +441,18 @@ exercises.c:178:59: error: ‘Libro’ has no member named ‘Autor’; did you 
       |                                                           autor
 Compilation failed
 c27d67b
+Fri 18 Aug 2023 11:20:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:178:59: error: ‘Libro’ has no member named ‘Autor’; did you mean ‘autor’?
+  178 |   strncpy(libro->autor.nombre, nombreAutor, sizeof(libro->Autor.nombre));
+      |                                                           ^~~~~
+      |                                                           autor
+exercises.c:180:10: error: ‘Libro’ has no member named ‘Autor’; did you mean ‘autor’?
+  180 |   libro->Autor.anioNacimiento = anioNacimiento;
+      |          ^~~~~
+      |          autor
+Compilation failed
+c87d9e2
