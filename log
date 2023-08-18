@@ -300,3 +300,19 @@ exercises.c:111:30: error: expected ‘;’ before ‘}’ token
       |     ~                         
 Compilation failed
 5204579
+Fri 18 Aug 2023 10:52:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:93:27: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   93 |   while( i < size1 && j < size 2)
+      |                           ^~~~
+      |                           size2
+exercises.c:93:27: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:93:31: error: expected ‘)’ before numeric constant
+   93 |   while( i < size1 && j < size 2)
+      |        ~                      ^~
+      |                               )
+Compilation failed
+3990ec8
