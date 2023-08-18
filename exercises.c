@@ -175,7 +175,7 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) 
 {
   int i;
-  for (i = 0; titulo[i] != '\0' && i < sizeof(libro>titulo) - 1; i++) 
+  for (i = 0; titulo[i] != '\0' && i < sizeof(libro->titulo) - 1; i++) 
   {
     libro->titulo[i] = titulo[i];
   }
