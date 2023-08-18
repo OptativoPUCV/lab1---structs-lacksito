@@ -385,3 +385,14 @@ exercises.c:185:59: error: expected expression before ‘Autor’
       |                                                           ^~~~~
 Compilation failed
 7ce2a46
+Fri 18 Aug 2023 11:14:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:185:60: error: ‘Libro’ has no member named ‘Autor’; did you mean ‘autor’?
+  185 |   for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro ->Autor.nombre) - 1; i++)
+      |                                                            ^~~~~
+      |                                                            autor
+Compilation failed
+72c701c
