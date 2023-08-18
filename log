@@ -278,3 +278,25 @@ Thu 17 Aug 2023 08:53:00 PM UTC:
  tests:  0|5
 total_score: 20/70
 55662f7
+Fri 18 Aug 2023 10:52:43 PM UTC: 
+ exercises.c | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:93:27: error: ‘size’ undeclared (first use in this function); did you mean ‘size2’?
+   93 |   while( i < size1 && j < size 2)
+      |                           ^~~~
+      |                           size2
+exercises.c:93:27: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:93:31: error: expected ‘)’ before numeric constant
+   93 |   while( i < size1 && j < size 2)
+      |        ~                      ^~
+      |                               )
+exercises.c:111:30: error: expected ‘;’ before ‘}’ token
+  111 |       result[k++] = arr2[j++]
+      |                              ^
+      |                              ;
+  112 |     }
+      |     ~                         
+Compilation failed
+5204579

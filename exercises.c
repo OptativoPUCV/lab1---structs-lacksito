@@ -45,7 +45,7 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano) 
 {
-  int * arregloPar = NULL;
+  int * arregloPar= NULL;
   *newTamano = 0;
   for (int i = 0; i < tamano; i++) 
   {
@@ -57,7 +57,7 @@ int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano)
 
   if (*newTamano > 0) 
   {
-    arregloPar = (int *)malloc(*newTamano * sizeof(int));
+    arregloPar = (int *) malloc (* newTamano * sizeof(int));
 
     if (arregloPar != NULL) 
     {
@@ -86,7 +86,30 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
+  int i = 0;
+  int j = 0;
+  int k = 0;
 
+  while( i < size1 && j < size 2)
+    {
+      if (arr1[i] < arr2[j])
+      {
+        result[k++] = arr1[i++];
+      }
+      else
+      {
+        result[k++] = arr2[j++];
+      }
+    }
+
+  while(i < size1)
+    {
+      result[k++] = arr1[i++];
+    }
+  while(j < size2)
+    {
+      result[k++] = arr2[j++]
+    }
 }
 
 /*
