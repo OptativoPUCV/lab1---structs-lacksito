@@ -182,7 +182,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   
   libro->titulo[i] = '\0';
 
-  for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro >autor.nombre) - 1; i++) 
+  for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro >Autor.nombre) - 1; i++) 
   {
     libro->autor.nombre[i] = nombreAutor[i];
   }

@@ -361,3 +361,17 @@ exercises.c:185:59: note: each undeclared identifier is reported only once for e
 cc1: all warnings being treated as errors
 Compilation failed
 28be9fb
+Fri 18 Aug 2023 11:14:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:178:52: error: comparison of distinct pointer types lacks a cast [-Werror]
+  178 |   for (i = 0; titulo[i] != '\0' && i < sizeof(libro>titulo) - 1; i++)
+      |                                                    ^
+exercises.c:185:59: error: expected expression before ‘Autor’
+  185 |   for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro >Autor.nombre) - 1; i++)
+      |                                                           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+61fdd7b
