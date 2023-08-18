@@ -316,3 +316,9 @@ exercises.c:93:31: error: expected ‘)’ before numeric constant
       |                               )
 Compilation failed
 3990ec8
+Fri 18 Aug 2023 10:55:53 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+ tests:  0|3
+total_score: 40/70
+00dc8b4
