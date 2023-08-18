@@ -174,19 +174,8 @@ typedef struct {
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) 
 {
-  int i;
-  for (i = 0; titulo[i] != '\0' && i < sizeof(libro->titulo) - 1; i++) 
-  {
-    libro->titulo[i] = titulo[i];
-  }
-  
-  libro->titulo[i] = '\0';
-
-  for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro ->Autor.nombre) - 1; i++) 
-  {
-    libro->autor.nombre[i] = nombreAutor[i];
-  }
-  libro->autor.nombre[i] = '\0';
+  strncpy(libro->titulo, titulo, sizeof(libro->titulo));
+  strncpy(libro->autor.nombre, nombreAutor, sizeof(libro->Autor.nombre));
 
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
