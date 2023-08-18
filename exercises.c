@@ -172,9 +172,25 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) 
+{
+  int i;
+  for (i = 0; titulo[i] != '\0' && i < sizeof(libro>titulo) - 1; i++) 
+  {
+    libro->titulo[i] = titulo[i];
+  }
+  
+  libro->titulo[i] = '\0';
 
+  for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro >autor.nombre) - 1; i++) 
+  {
+    libro->autor.nombre[i] = nombreAutor[i];
+  }
+  libro->autor.nombre[i] = '\0';
+
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
+}  
 /*
 Ejercicio 7: Lista enlazada de números
 Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y

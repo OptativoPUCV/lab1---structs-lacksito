@@ -345,3 +345,19 @@ Fri 18 Aug 2023 11:03:57 PM UTC:
  tests:  0|3
 total_score: 40/70
 a1c62cc
+Fri 18 Aug 2023 11:13:55 PM UTC: 
+ exercises.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:178:52: error: comparison of distinct pointer types lacks a cast [-Werror]
+  178 |   for (i = 0; titulo[i] != '\0' && i < sizeof(libro>titulo) - 1; i++)
+      |                                                    ^
+exercises.c:185:59: error: ‘autor’ undeclared (first use in this function); did you mean ‘Autor’?
+  185 |   for (i = 0; nombreAutor[i] != '\0' && i < sizeof(libro >autor.nombre) - 1; i++)
+      |                                                           ^~~~~
+      |                                                           Autor
+exercises.c:185:59: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+28be9fb
