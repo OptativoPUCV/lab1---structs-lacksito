@@ -57,7 +57,7 @@ int *filterEvenNumbers(int arreglo[], int tamano, int *newTamano)
 
   if (*newTamano > 0) 
   {
-    arregloPar = (int *) malloc (* newTamano * sizeof(int));
+    arregloPar = (int *)malloc(* newTamano * sizeof(int));
 
     if (arregloPar != NULL) 
     {
@@ -196,4 +196,7 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) 
+{
+  return NULL; 
+}
