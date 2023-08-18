@@ -479,3 +479,9 @@ In function ‘strncpy’,
 cc1: all warnings being treated as errors
 Compilation failed
 8ed0781
+Fri 18 Aug 2023 11:25:02 PM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  0|3
+total_score: 40/70
+94cf768
